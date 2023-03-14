@@ -1,18 +1,6 @@
-<div id="container">
-    <mat-form-field>
-        <mat-select [formControl]="itemMultiCtrl" [multiple]="true" #multiSelect>
-            <mat-option>
-                <ngx-mat-select-search [formControl]="itemMultiFilterCtrl" placeholderLabel="Search">
-                </ngx-mat-select-search>
-            </mat-option>
-            <mat-option *ngFor="let item of filteredItemsMulti | async" [value]="item">
-                {{ item.asset_id_quote }}
-            </mat-option>
-        </mat-select>
-    </mat-form-field>
-    
-    <p>Selected currency</p>
-    <ul *ngFor="let item of itemMultiCtrl?.value">
-        <li> {{ item.asset_id_quote }}, {{ item.rate }} </li>
-    </ul>
-</div>
+<nav>
+    <a routerLink="/main">Main view<br></a>
+    <a routerLink="/details">Details view</a>
+</nav>
+
+<router-outlet></router-outlet>

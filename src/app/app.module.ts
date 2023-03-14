@@ -11,10 +11,14 @@ import { MatSelectModule } from '@angular/material/select';
 import { NgxMatSelectSearchModule } from 'ngx-mat-select-search'; 
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatFormFieldModule } from '@angular/material/form-field';
+import { MainViewComponent } from './main-view/main-view.component';
+import { DetailsViewComponent } from './details-view/details-view.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MainViewComponent,
+    DetailsViewComponent
   ],
   imports: [
     BrowserModule,
